@@ -1430,12 +1430,12 @@ double lookup(double x, double *table, int nItems)
     y = table[i] + (x - x0) * (table[i+1] - table[i]) / delta;
 
     // --- use quadratic interpolation for low x value
-    if ( i < 2 )
-    {
-        y2 = y + (x - x0) * (x - x1) / (delta*delta) *
-             (table[i]/2.0 - table[i+1] + table[i+2]/2.0) ;
-        if ( y2 > 0.0 ) y = y2;
-    }
+    // if ( i < 2 )
+    // {
+    //     y2 = y + (x - x0) * (x - x1) / (delta*delta) *
+    //          (table[i]/2.0 - table[i+1] + table[i+2]/2.0) ;
+    //     if ( y2 > 0.0 ) y = y2;
+    // }
     if ( y < 0.0 ) y = 0.0;
     return y;
 }

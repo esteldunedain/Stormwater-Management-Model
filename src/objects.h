@@ -600,7 +600,7 @@ typedef struct
 //--------------------------------------
 // CROSS SECTION TRANSECT DATA STRUCTURE
 //--------------------------------------
-#define  N_TRANSECT_TBL  51       // size of transect geometry tables
+#define  N_TRANSECT_TBL  401      // size of transect geometry tables
 typedef struct
 {
     char*        ID;                        // section ID
